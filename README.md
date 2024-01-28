@@ -1,6 +1,6 @@
 # Web_Dev_Python_Django
 
-<p size="15px">This repository serves my backup of files as I progress through the "<a href="https://www.udemy.com/course/python-django-the-practical-guide/">Python Django - The Practical Guide </a>" course on Udemy. My focus is on mastering the basics of Python and the Django framework, understanding project creation, and learning how to run Django projects.<p>
+<p align= "justify" size="35px">This repository serves my backup of files as I progress through the "<a href="https://www.udemy.com/course/python-django-the-practical-guide/">Python Django - The Practical Guide </a>" course on Udemy. My focus is on mastering the basics of Python and the Django framework, understanding project creation, and learning how to run Django projects.<p>
 <br>
 
 **Current Concepts Learned**
