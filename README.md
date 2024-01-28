@@ -10,7 +10,7 @@
     <ol>
         <li>Install Python 3.x and pip</li>
         <li>Install Django</li>
-        <em background-color=red>python -m pip install Django</em>
+        <em background-color="red">python -m pip install Django</em>
         <li>Check if Django is installed succesfully</li>
         django-admin
         <br>
