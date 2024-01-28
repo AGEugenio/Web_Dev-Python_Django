@@ -14,6 +14,7 @@
         django-admin
         <br>
         The screenshot below shows that Django is successfully installed
+        <br>
         <img src="https://github.com/AGEugenio/Web_Dev_Python_Django/assets/113889259/0609b502-a9e4-4897-acbd-ec3d184cb09c" width="40%">
     </ol>
 <li>Create and Understand Django Projects</li>
