@@ -7,7 +7,7 @@ urlpatterns = [
     # path("jan", views.january),
     
     #path for /challenges/
-    path("",views.index,name="index"),
+    path("",views.index),
 
     # if you don't care the concrete value;create a dynamic path
     # month is the identifier for the given value

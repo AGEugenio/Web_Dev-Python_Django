@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+    {% block css_files  %}
+
+        <link rel="stylesheet" href="{% static "challenges/challenge.css" %}"> <!-- static tag is available because of load static-->
+        <!--static is like url, allows to construct file to a static asset-css file-->
+        <link rel="stylesheet" href="{% static "challenges/includes/header.css" %}"> 
+    {% endblock  %}
+
+    {% block page_title%}
+        {{month_name | title}}'s Challenge
+    {% endblock%}
+
+    {% block content %}
+         <!-- include snippet   -->
+        {% include "challenges/includes/header.html" %} <!--this allows to include another template in the given path-->
+        <!-- the with active_page="challenge" is for setting extra variable w/c will be only available to the included snippet and not to whole base template-->
+        
+        <h1>This {{month_name | title}}'s Challenge</h1><!--title is under Django tags and filters; it is for Capitalizing the start-->
+        <!--special syntax that can be picked up by django to inject dynamic content;--> 
+        {% if text is not None %}
+            <h2>{{ text }}</h2>  <!--acts like a placeholder w/c will be replaced by django after it parses this template-->
+        {% else%}
+            <p class="fallback">There is no challenge for this month yet!</p>
+        {% endif %}
+    {% endblock %}
