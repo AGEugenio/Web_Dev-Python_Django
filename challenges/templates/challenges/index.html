@@ -1,0 +1,25 @@
+{% extends "base.html" %} <!--point at the template that we wanna extend-->
+<!--this makes the structure of this template based on the pointed template-->
+
+{% load static %} <!-- load static, loads a plugin that includes functionality in this template-->
+
+{% block css_files  %}
+    <link rel="stylesheet" href="{% static "challenges/challenges.css" %}"> <!-- static tag is available because of load static-->
+    <!--static is like url, allows to construct file to a static asset-css file-->
+    <link rel="stylesheet" href="{% static "challenges/includes/header.css" %}"> 
+{% endblock  %}
+
+
+    {% block page_title%}
+        All Challenges
+    {% endblock%}
+
+    {% block content %}
+     <!-- include snippet   -->
+     {% include "challenges/includes/header.html"  %} <!--this allows to include another template in the given path-->
+    <ul>
+            {% for month in months %} <!--start of the for block-->
+            <li><a href="{% url "month-challenge" month %}">{{ month|title }}</a></li> <!-- the url tag is equivalent to the reverse function inside templates-->
+            {% endfor %} <!--the end of the for block-->
+    </ul>
+   {% endblock %}
