@@ -40,7 +40,7 @@ all_posts = [
         "author": "Angel",
         "date": date(2024,1,24),
         "title":"Programming is Fun",
-        "excerpt":"Programming is Fun! lololololol",
+        "excerpt":"Programming is Fun! I am currently studying how to create website and web application using Python and Django.",
         "content": """
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -71,7 +71,7 @@ all_posts = [
         "author": "Angel",
         "date": date(2024,1,25),
         "title":"In the Woods",
-        "excerpt":"It is cool to be in the woods! WOOOOO!",
+        "excerpt":"It is cool to be in the woods! I love that there are many trees that can be seen anywhere. It is a great place to relax.",
         "content": """
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
