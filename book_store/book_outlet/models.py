@@ -15,7 +15,7 @@ class Book(models.Model):
     #id = models.AutoField() - this is automatically added to every data entity by Django
     
     # slug format like Harry Potter 1 => harry-potter-1
-    slug = models.SlugField(default="",null=False, db_index=True) #db_index add database index in the field, db will save the field more efficient
+    slug = models.SlugField(default="",blank=True,null=False, db_index=True) #db_index add database index in the field, db will save the field more efficient
     #this can make searching that field quicker; recommended to only used this to commonly used field
 
 
@@ -23,6 +23,7 @@ class Book(models.Model):
     def get_absolute_url(self): #this is usually automatically load by django
         return reverse("book-detail", args=[self.slug]) # gets the slug arg in url
     
+    #### THIS CAN BE REMOVED SINCE THE CREATED CLASS IN ADMIN.PY OVERRIDES THIS ###
     #override the save method
     def save(self, *args, **kwargs): #standard Python Syntax
         #group all positional and all keyword arguments into a summary parameter: args and kwargs
@@ -32,7 +33,8 @@ class Book(models.Model):
        
         #should call this to ensure that Django built in save method is still getting called
         super().save(*args, **kwargs) # make sure to also pass the parameters
-
+    ######################################################################################
+        
     #a method that can be used to define how object is returned
     def __str__(self):
         return f"{self.title}({self.rating})"
